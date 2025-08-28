@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        let text = prompt("Enter the text:");
+        let text2 = "";
+
+        for (let el of text) {
+            if (!text2.includes(el)) {
+                text2 += el;
+            }
+        }
+        alert(text2);
+    </script>
+</body>
+
+</html>
