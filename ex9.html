@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <script>
+        let text = prompt("Enter the text");
+        let count_up = 0;
+        let count_low = 0;
+        let count_num = 0;
+
+        for (let el of text) {
+            let element = el.charCodeAt(0);
+            if (element >= 48 && element <= 57) {
+                count_num++;
+            }
+            else if (element >= 65 && element <= 90) {
+                count_up++;
+            }
+            else if (element >= 97 && element <= 122) {
+                count_low++;
+            }
+        }
+        alert(count_low);
+        alert(count_up);
+        alert(count_num);
+    </script>
+</body>
+
+</html>
