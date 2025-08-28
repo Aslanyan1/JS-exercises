@@ -5,17 +5,14 @@
     <script>
         function Polindrom(str) {
             let reversed = str.split("").reverse().join("");
-            if (str == reversed) {
-                alert(true);
-            }
-            else {
-                alert(false);
-            }
+            return str === reversed;
         }
-        string = Polindrom("hello");
-        alert(string);
+
+        let string = Polindrom("hello");
+        alert(string); 
     </script>
 </body>
 
 </html>
+
 
