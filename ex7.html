@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script>
+        function word_count(text, word) {
+            let count = 0;
+            for (let word2 of text.split(" ")) {
+                if (word == word2) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        let txt = word_count("hi hello hi hi world", 'hi');
+        alert(txt);
+    </script>
+</body>
+
+</html>
