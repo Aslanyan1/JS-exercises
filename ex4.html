@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        let str = prompt("Enter the text");
+        len = str.length
+        while (len >= 0) {
+            if (str[len] == " "){
+                str = str.slice(0, len) + str.slice(len + 1);
+            }
+            len--
+        }
+        alert(str)
+    </script>
+</body>
+
+</html>
