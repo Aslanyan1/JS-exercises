@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        let res = 0;
+        let num = 0;
+        let number = prompt("Enter the number");
+        while (number) {
+            num = number % 10;
+            res += num;
+            number = Math.round(number / 10);
+        }
+        alert(res);
+    </script>
+</body>
+
+</html>
