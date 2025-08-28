@@ -1,16 +1,20 @@
+<!-- Sum of Digits of a Number -->
 <html>
 
 <body>
     <script>
-        let res = 0;
-        let num = 0;
-        let number = prompt("Enter the number");
-        while (number) {
-            num = number % 10;
-            res += num;
-            number = Math.round(number / 10);
+        function num_c(number) {
+            let res = 0;
+            let num = 0;
+            while (number) {
+                num = number % 10;
+                res += num;
+                number = Math.round(number / 10);
+            }
+            return res;
         }
-        alert(res);
+        let a = num_c(123)
+        alert(a)
     </script>
 </body>
 
